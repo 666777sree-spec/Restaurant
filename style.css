@@ -1,0 +1,201 @@
+/* General styling */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fffaf3;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #252525;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 12px;
+    color: #ffb347;
+    font-size: 32px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #ffb347;
+}
+
+/* Hero section */
+.hero {
+    background: #7b241c;
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.hero h2 {
+    font-size: 32px;
+    margin-top: 0;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.button {
+    display: inline-block;
+    background: #ffb347;
+    color: #222;
+    padding: 12px 22px;
+    margin-top: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button.food img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}:hover {
+    background: #ffd18a;
+}
+
+/* Menu section */
+.menu {
+    padding: 45px 20px;
+    text-align: center;
+    background: #fffaf3;
+}
+
+.menu h2 {
+    color: #7b241c;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.menu-intro {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.food-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.food {
+    background: #ffffff;
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.food img {
+    display: block;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.food h3 {
+    color: #7b241c;
+    font-size: 22px;
+    margin: 16px 0 8px;
+}
+
+.food .description {
+    color: #666;
+    font-size: 15px;
+    margin: 8px 0;
+}
+
+.food .price {
+    color: #287a3d;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 12px 0 4px;
+}
+
+/* Wider screens */
+@media (min-width: 650px) {
+    .food-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Contact section */
+.contact {
+    background: #f2e3d5;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.contact h2 {
+    color: #7b241c;
+}
+
+/* Footer */
+footer {
+    background: #252525;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 27px;
+    }
+
+    nav a {
+        margin: 0 5px;
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 45px 15px;
+    }
+
+    .hero h2 {
+        font-size: 27px;
+    }
+}
+.whatsapp {
+    display: inline-block;
+    background: #25D366;
+    color: white;
+    padding: 14px 24px;
+    margin: 12px 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.whatsapp:hover {
+    background: #1da851;
+}
